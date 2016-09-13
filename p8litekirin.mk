@@ -36,6 +36,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072 \
 	ro.sf.lcd_density=320
 
+# Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/huawei/p8litekirin/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    	$(LOCAL_KERNEL):kernel
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
 	LiveWallpapersPicker \
