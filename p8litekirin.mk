@@ -78,6 +78,13 @@ PRODUCT_COPY_FILES += \
     	frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
     	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
 
+# Ramdisk
+PRODUCT_COPY_FILES += \
+       	$(LOCAL_PATH)/ramdisk/fstab.hi6210sft:root/fstab.hi6210sft \
+       	$(LOCAL_PATH)/ramdisk/init.chip.hi6210sft.rc:root/init.chip.hi6210sft.rc \
+       	$(LOCAL_PATH)/ramdisk/init.hi6210sft.rc:root/init.hi6210sft.rc \
+       	$(LOCAL_PATH)/ramdisk/ueventd.hi6210sft.rc:root/ueventd.hi6210sft.rc
+
 # Wifi
 PRODUCT_PACKAGES := \
 	libwpa_client \
