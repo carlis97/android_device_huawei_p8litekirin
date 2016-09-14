@@ -1,1 +1,1 @@
-add_unch_combo cm_p8litekirin-eng
+add_lunch_combo cm_p8litekirin-eng
