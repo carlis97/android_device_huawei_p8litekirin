@@ -70,6 +70,9 @@ PRODUCT_PACKAGES += \
 	LiveWallpapersPicker \
 	librs_jni
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS := device/huawei/p8litekirin/overlay
+
 # Permissios
 PRODUCT_COPY_FILES += \
     	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
