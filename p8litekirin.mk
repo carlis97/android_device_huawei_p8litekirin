@@ -96,6 +96,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     	ro.telephony.ril_class=HuaweiRIL \
     	telephony.lteOnCdmaDevice=0 \
     	telephony.lteOnGsmDevice=1
+
+# USB
+PRODUCT_PACKAGES := \
+	com.android.future.usb.accessory
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    	persist.sys.usb.config=mtp
+
+# USB OTG
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.isUsbOtgEnabled=true
     
 # Wifi
 PRODUCT_PACKAGES := \
