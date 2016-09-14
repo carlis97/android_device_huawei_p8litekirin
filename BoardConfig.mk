@@ -17,6 +17,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a15
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 
+# Blobs
+-include vendor/huawei/p8litekirin/BoardConfigVendor.mk
+
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := hi6210sft

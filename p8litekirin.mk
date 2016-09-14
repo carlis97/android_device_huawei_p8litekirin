@@ -5,6 +5,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Blobs
+$(call inherit-product-if-exists, vendor/huawei/p8litekirin/p8litekirin-vendor.mk)
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
 # Charcteristic
 PRODUCT_CHARACTERISTICS := default
 
