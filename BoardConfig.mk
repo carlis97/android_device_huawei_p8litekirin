@@ -48,6 +48,9 @@ RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_FSTAB := device/huawei/p8litekirin/rootdir/fstab.hi6210sft
 TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/huawei/p8litekirin/ril/
+
 # UserIMAGES
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true

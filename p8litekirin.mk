@@ -89,6 +89,14 @@ PRODUCT_COPY_FILES += \
        	$(LOCAL_PATH)/ramdisk/init.hi6210sft.rc:root/init.hi6210sft.rc \
        	$(LOCAL_PATH)/ramdisk/ueventd.hi6210sft.rc:root/ueventd.hi6210sft.rc
 
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    	audioril.lib=libhuawei-audio-ril.so \
+	ro.telephony.default_network=9 \
+    	ro.telephony.ril_class=HuaweiRIL \
+    	telephony.lteOnCdmaDevice=0 \
+    	telephony.lteOnGsmDevice=1
+    
 # Wifi
 PRODUCT_PACKAGES := \
 	libwpa_client \
