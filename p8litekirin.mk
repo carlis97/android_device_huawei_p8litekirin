@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
 	libGLES_android \
 	libGLES_mali \
 	libion
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.render_dirty_regions=false \
 	hw.lcd.lcd_density=320 \		
