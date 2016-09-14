@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VENDOR=samsung
+VENDOR=huawei
 DEVICE=p8litekirin
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary

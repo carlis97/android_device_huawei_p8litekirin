@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VENDOR=samsung
+VENDOR=huawei
 DEVICE=p8litekirin
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
