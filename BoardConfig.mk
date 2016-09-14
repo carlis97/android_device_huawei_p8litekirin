@@ -20,6 +20,12 @@ TARGET_2ND_CPU_ABI2 := armeabi
 # Blobs
 -include vendor/huawei/p8litekirin/BoardConfigVendor.mk
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/p8litekirin/bluetooth
+BOARD_CUSTOM_BT_CONFIG := device/huawei/p8litekirin/bluetooth/libbt_p8litekirin.txt
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+
 # Board
 BOARD_VENDOR := huawei
 BOARD_VENDOR_PLATFORM := hi6210sft
