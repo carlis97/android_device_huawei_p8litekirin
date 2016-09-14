@@ -46,6 +46,10 @@ endif
 PRODUCT_COPY_FILES += \
     	$(LOCAL_KERNEL):kernel
 
+# Lights
+PRODUCT_PACKAGES += \
+	lights.hi6210sft
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
 	LiveWallpapersPicker \
