@@ -32,6 +32,11 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # Graphics
+PRODUCT_PACKAGES += \
+	gralloc.hi6210sft \
+	libGLES_android \
+	libGLES_mali \
+	libion
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.render_dirty_regions=false \
 	hw.lcd.lcd_density=320 \		
