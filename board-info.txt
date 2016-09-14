@@ -1,0 +1,1 @@
+require board=hi6210sft

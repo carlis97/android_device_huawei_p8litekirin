@@ -20,12 +20,27 @@ TARGET_2ND_CPU_ABI2 := armeabi
 # Blobs
 -include vendor/huawei/p8litekirin/BoardConfigVendor.mk
 
+# Board
+BOARD_VENDOR := huawei
+BOARD_VENDOR_PLATFORM := hi6210sft
+TARGET_BOARD_INFO_FILE := device/huawei/p8litekirin/board-info.txt
+TARGET_BOARD_PLATFORM := hi6210sft
+TARGET_BOARD_PLATFORM_GPU := mali-450m
+
 # Bootloader
-TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := hi6210sft
+TARGET_NO_BOOTLOADER := true
 
 # Display
 DEVICE_RESOLUTION := 720x1280
+
+# Fonts
+EXTENDED_FONT_FOOTPRINT := true
+
+# Graphics
+ANDROID_ENABLE_RENDERSCRIPT := true
+TARGET_HARDWARE_3D := true
+USE_OPENGL_RENDERER := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x07478000
