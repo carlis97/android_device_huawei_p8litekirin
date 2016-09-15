@@ -45,7 +45,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.render_dirty_regions=false \
-	hw.lcd.lcd_density=320 \		
+	hw.lcd.lcd_density=320 \
 	persist.sys.strictmode.disable=1 \
 	persist.sys.use_dithering=2 \
 	ro.opengles.version=131072 \
