@@ -1,1 +1,1 @@
-add_lunch_combo cm_p8litekirin-eng
+add_lunch_combo aosp_p8litekirin-eng

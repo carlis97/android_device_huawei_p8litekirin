@@ -1,4 +1,3 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # AAPT
@@ -15,6 +14,7 @@ PRODUCT_CHARACTERISTICS := default
 # Charger
 PRODUCT_PACKAGES += \
 	charger_res_images
+
 # Codecs
 PRODUCT_COPY_FILES += \
     	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \

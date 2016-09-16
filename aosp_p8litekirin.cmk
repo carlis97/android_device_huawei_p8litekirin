@@ -1,0 +1,7 @@
+$(call inherit-product, device/huawei/p8litekirin/full_p8litekirin.mk)
+
+PRODUCT_NAME := aosp_p8litekirin
+
+PRODUCT_PACKAGES += \
+    	Launcher3
+
