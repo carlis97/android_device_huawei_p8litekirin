@@ -148,6 +148,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     	telephony.lteOnCdmaDevice=0 \
     	telephony.lteOnGsmDevice=1
 
+# Sensors
+PRODUCT_PACKAGES := \
+	local_time.default \
+	power.default \
+	vibrator.default
+
 # USB
 PRODUCT_PACKAGES := \
 	com.android.future.usb.accessory
