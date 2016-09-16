@@ -19,4 +19,8 @@
 
 #define BTM_DEF_LOCAL_NAME   "Huawei P8 Lite"
 
+#define BTA_DISABLE_DELAY 100 /* in milliseconds */
+
+#define BTM_BLE_ADV_TX_POWER {-21, -15, -7, 1, 9}
+
 #endif
