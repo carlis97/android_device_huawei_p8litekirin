@@ -80,8 +80,17 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 RECOVERY_FSTAB_VERSION := 2
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_FSTAB := device/huawei/p8litekirin/ramdisk/fstab.hi6210sft
+#TARGET_RECOVERY_FSTAB := device/huawei/p8litekirin/ramdisk/fstab.hi6210sft
+TARGET_RECOVERY_FSTAB := device/huawei/p8litekirin/twrp/twrp.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
+
+# Recovery TWRP
+TWHAVE_SELINUX := true
+TW_BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/p8litekirin/twrp/graphics.c
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/balong_fb.1/leds/lcd_backlight0/brightness"
+TW_CUSTOM_BATTERY_PATH := "/sys/devices/battery.0/power_supply/Battery"
+TW_MAX_BRIGHTNESS := 255
+TW_THEME := portrait_hdpi
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/huawei/p8litekirin/ril/
