@@ -14,3 +14,4 @@ on property:sys.usb.config=hisi_debug,adb
     start hw_cdma_service
     start adbd
     setprop sys.usb.state $sys.usb.config
+

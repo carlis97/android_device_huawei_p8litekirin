@@ -3,13 +3,14 @@
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
-/dev/block/platform/hi_mci.0/by-name/boot		         /boot				 emmc	     defaults		                                  recoveryonly
-/dev/block/platform/hi_mci.0/by-name/recovery	         /recovery			 emmc	     defaults		                                  recoveryonly
+/dev/block/platform/hi_mci.0/by-name/boot                /boot               emmc        defaults		                                  recoveryonly
+/dev/block/platform/hi_mci.0/by-name/recovery            /recovery           emmc        defaults		                                  recoveryonly
 /dev/block/platform/hi_mci.0/by-name/misc                /misc               emmc        defaults                                         recoveryonly
 
 /dev/block/platform/hi_mci.0/by-name/system              /system             ext4        rw                                               wait
-/dev/block/platform/hi_mci.0/by-name/cache               /cache              ext4        noatime,nosuid,nodev,discard                     wait,check
-/dev/block/platform/hi_mci.0/by-name/userdata            /data               ext4        noatime,nosuid,nodev,discard,noauto_da_alloc     wait,check,encryptable=footer
+/dev/block/mmcblk0p34                                    /cache              ext4        noatime,nosuid,nodev,discard                     wait,check
+/dev/block/mmcblk0p40                                    /data               ext4        noatime,nosuid,nodev,discard,noauto_da_alloc     wait,check,encryptable=footer
 
-/devices/hi_mci.1/mmc_host/mmc1*                         auto                auto        defaults                                         voldmanaged=sdcard1:auto,noemulatedsd
-/devices/hisi-usb-otg/usb*                               auto                auto        defaults                                         voldmanaged=usbdisk:auto
+/dev/block/mmcblk1p1*                                    auto                auto        defaults                                         wait,voldmanaged=sdcard1:auto,noemulatedsd
+/devices/hisi-usb-otg/usb*                               auto                auto        defaults                                         wait,voldmanaged=usbdisk:auto
+/dev/block/zram0                                         none                swap        defaults                                         zramsize=268435456
