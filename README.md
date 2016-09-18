@@ -9,11 +9,7 @@ Well, if you want to wait my builds, here the following instruction to compile C
 ## Configure Ubuntu
 Install developments package by the following command in console.
 
-	sudo apt-get install git-core gnupg flex bison gperf build-essential \
-  zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
-  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
-  libgl1-mesa-dev libxml2-utils xsltproc unzip
-
+	sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache  libgl1-mesa-dev libxml2-utils xsltproc unzip
 
 	see here  to install java http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
 
