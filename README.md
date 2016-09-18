@@ -7,20 +7,18 @@ Well, if you want to wait my builds, here the following instruction to compile C
 - [x] big hard drive to store Android source.
 
 ## Configure Ubuntu
-- [x] Install developments package by the following command in console.
+Install developments package by the following command in console.
 	sudo apt-get install git-core gnupg flex bison gperf build-essential \
   zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
   libgl1-mesa-dev libxml2-utils xsltproc unzip
 
-- [x]Install Java.
-	see here http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
 
-- [x] Install ADB tools.
+	see here  to install java http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
+
 	sudo apt-get install android-tools-adb android-tools-fastboot
 
 ## Download Cyanogen Mod 12.1
-- [x] From console.
 	mkdir cm-12.1
 	cd cm-12.1
 	repo init -u https://github.com/CyanogenMod/android -b cm-12.1
