@@ -81,7 +81,7 @@ RECOVERY_FSTAB_VERSION := 2
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_FSTAB := device/huawei/p8litekirin/ramdisk/fstab.hi6210sft
-TARGET_RECOVERY_FSTAB := device/huawei/p8litekirin/twrp/twrp.fstab
+#TARGET_RECOVERY_FSTAB := device/huawei/p8litekirin/twrp/twrp.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
 
 # Recovery TWRP
