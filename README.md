@@ -1,3 +1,6 @@
+## Compiling Cyanogen Mod
+	Well, if you want to wait my builds, here the following instruction to compile CyanogenMod 12.1.
+
 ## Spec Sheet
 
 | Feature                 | Specification                     |
