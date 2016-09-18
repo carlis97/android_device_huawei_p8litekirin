@@ -1,5 +1,39 @@
 ## Compiling Cyanogen Mod
-	Well, if you want to wait my builds, here the following instruction to compile CyanogenMod 12.1.
+Well, if you want to wait my builds, here the following instruction to compile CyanogenMod 12.1.
+
+## Requirements:
+-Ubuntu Linux 64 Bit.
+-4 gigs of ram but i reccomend more for faster compilation.
+-a big hard drive to store Android source.
+
+## Configure Ubuntu
+-Install developments package by the following command in console.
+	sudo apt-get install git-core gnupg flex bison gperf build-essential \
+  zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
+  libgl1-mesa-dev libxml2-utils xsltproc unzip
+
+-Install Java.
+	see here http://www.webupd8.org/2012/01/install-oracle-java-jdk-7-in-ubuntu-via.html
+
+-Install ADB tools.
+	sudo apt-get install android-tools-adb android-tools-fastboot
+
+## Download Cyanogen Mod 12.1
+-From console.
+	mkdir cm-12.1
+	cd cm-12.1
+	repo init -u https://github.com/CyanogenMod/android -b cm-12.1
+	repo sync
+
+## Clone Repos
+	git clone https://github.com/hak86/android_device_huawei_p8litekirin -b cm-12.1 device/huawei/p8litekirin
+
+	git clone https://github.com/hak86/android_vendor_huawei_p8litekirin -b cm-12.1 vendor/huawei/p8litekirin
+
+## Compile Cyanogen Mod 12.1
+	. build/envsetup.sh
+	breakfast p8litekirin
 
 ## Spec Sheet
 
