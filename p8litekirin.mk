@@ -77,6 +77,16 @@ PRODUCT_PACKAGES += \
 	LiveWallpapersPicker \
 	librs_jni
 
+# NFC
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/nfc/com.gsma.services.nfc.xml:system/etc/permissions/com.gsma.services.nfc.xml \
+        $(LOCAL_PATH)/nfc/libnfc-brcm-alice.conf:system/etc/libnfc-brcm-alice.conf \
+        $(LOCAL_PATH)/nfc/libnfc-nxp-alice.conf:system/etc/libnfc-nxp-alice.conf \
+        $(LOCAL_PATH)/nfc/nfc_nci.pn54x.default.so:system/lib64/hw/nfc_nci.pn54x.default.so \
+    	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    	frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+    	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS := device/huawei/p8litekirin/overlay
 
